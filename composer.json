@@ -15,11 +15,11 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "newtestplugin\\": "src/"
+            "msuhels\\newtestplugin\\": "src/"
         }
     },
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "laravel/framework": "^9.19",
         "filament/filament": "^2.0",
         "filament/forms": "^2.9",
@@ -32,7 +32,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                 "newtestplugin\\TestProviders"
+                 "msuhels\\newtestplugin\\TestProviders"
             ]
         }
     },
