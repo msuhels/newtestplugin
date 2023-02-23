@@ -3,7 +3,7 @@
         'name' => 'msuhels/newtestplugin',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '4eb739e5b087d643b011632b0fee363c3d4f97b6',
+        'reference' => '6126c095703ced4710f180fedc33043841918c1c',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -475,7 +475,7 @@
         'msuhels/newtestplugin' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '4eb739e5b087d643b011632b0fee363c3d4f97b6',
+            'reference' => '6126c095703ced4710f180fedc33043841918c1c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

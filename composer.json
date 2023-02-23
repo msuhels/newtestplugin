@@ -11,7 +11,11 @@
         "widget",
         "fun"
     ],
-    "homepage": "https://github.com/msuhels/newtestplugin",
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/msuhels/newtestplugin" }
+    ],
+    "require-all": true,
+
     "license": "MIT",
     "autoload": {
         "psr-4": {
