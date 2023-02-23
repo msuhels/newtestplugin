@@ -1,0 +1,22 @@
+{
+  "name": "newtestplugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msuhels/newtestplugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msuhels/newtestplugin/issues"
+  },
+  "homepage": "https://github.com/msuhels/newtestplugin#readme",
+   "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@dalenguyen"
+  }
+}
