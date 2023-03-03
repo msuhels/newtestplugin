@@ -4,7 +4,8 @@ namespace msuhels\newtestplugin\Resources;
 
 use  msuhels\newtestplugin\Resources\TestpluginResources\Pages;
 use  msuhels\newtestplugin\Resources\TestpluginResources\RelationManagers;
-use App\Models\newtestplugin;
+use msuhels\newtestplugin\Models\Chat;
+use msuhels\newtestplugin\ChatMessages;
 use Filament\Forms;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
@@ -15,7 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class TestpluginResources extends Resource
 {
-    protected static ?string $model = newtestplugin::class;
+    protected static ?string $model = Chat::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
@@ -23,7 +24,7 @@ class TestpluginResources extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
+                Forms\Components\TextInput::make('message')
                     ->required()
                     ->maxLength(255),
               
@@ -34,7 +35,7 @@ class TestpluginResources extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name'),
+                Tables\Columns\TextColumn::make('sender.name'),
               
             ])
             ->filters([
@@ -52,7 +53,7 @@ class TestpluginResources extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ManagePosts::route('/'),
+            'index' => Pages\ManageTestplugin::route('/'),
         ];
     }    
 }

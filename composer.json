@@ -1,3 +1,4 @@
+
 {   
     "name":"msuhels/newtestplugin",
     "description": "this is demo package",
@@ -11,11 +12,6 @@
         "widget",
         "fun"
     ],
-    "repositories": [
-        { "type": "vcs", "url": "https://github.com/msuhels/newtestplugin" }
-    ],
-    "require-all": true,
-
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -24,10 +20,11 @@
     },
     "require": {
         "php": "^8.1",
-        "laravel/framework": "^9.19",
         "filament/filament": "^2.0",
         "filament/forms": "^2.9",
+        "laravel/framework": "^9.19",
         "laravel/tinker": "^2.8",
+        "pusher/pusher-php-server": "^7.2",
         "spatie/laravel-package-tools": "^1.14"
     },
     "config": {
