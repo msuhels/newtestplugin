@@ -33,7 +33,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                 "msuhels\\newtestplugin\\TestProviders"
+                 "msuhels\\newtestplugin\\TestProvider"
             ]
         }
     },
